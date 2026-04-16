@@ -1,0 +1,23 @@
+{
+  "servers": {
+    "io.github.upstash/context7": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@upstash/context7-mcp"
+      ],
+      "env": {
+        "CONTEXT7_API_KEY": "${input:context7-api-key}"
+      }
+    }
+  },
+  "inputs": [
+    {
+      "type": "promptString",
+      "id": "context7-api-key",
+      "description": "API key for authentication",
+      "password": true
+    }
+  ]
+}

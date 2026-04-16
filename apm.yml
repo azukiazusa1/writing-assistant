@@ -1,0 +1,9 @@
+name: writing-assistant
+version: 1.0.0
+description: APM project for writing-assistant
+author: azukiazusa1
+dependencies:
+  apm: []
+  mcp:
+    - io.github.upstash/context7
+scripts: {}
